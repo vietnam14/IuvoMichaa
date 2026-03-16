@@ -3,40 +3,34 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy anniversary 💌</title>
+<title>Happy anniversary ❤️</title>
 
 <style>
 
 body{
-margin:0;
+margin: 8;
 font-family:Poppins,sans-serif;
-background:linear-gradient(135deg,#ffd6e8,#ffeef7);
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
-overflow:hidden;
-}
-
-.container{
-text-align:center;
+background:linear-gradient(135deg,#d2bbc5,#db77ad);
+overflow-x:hidden;
 }
 
 .envelope{
-background:white;
-width:300px;
-height:200px;
-border-radius:10px;
-box-shadow:0 10px 25px rgba(0,0,0,0.2);
-display:flex;
-justify-content:center;
-align-items:center;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:rgb(241,176,219);
+padding:40px;
+border-radius:15px;
+font-size:26px;
 cursor:pointer;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
 transition:0.4s;
+will-change:transform;
 }
 
 .envelope:hover{
-transform:scale(1.05);
+transform:translate(-50%,-50%) scale(1.05);
 }
 
 .letter{
@@ -45,19 +39,20 @@ position:absolute;
 top:50%;
 left:50%;
 transform:translate(-50%,-50%);
-background:white;
 width:80%;
-max-width:700px;
+max-width:800px;
+background:rgb(250,207,233);
 padding:40px;
 border-radius:20px;
 box-shadow:0 10px 30px rgba(0,0,0,0.2);
-overflow-y:auto;
-max-height:80vh;
+max-height:85vh;
+overflow:auto;
 }
 
 .title{
-font-size:30px;
+font-size:32px;
 color:#ff2e78;
+text-align:center;
 margin-bottom:20px;
 }
 
@@ -65,16 +60,18 @@ margin-bottom:20px;
 font-size:20px;
 line-height:1.7;
 color:#b30059;
+text-align:center;
 }
 
 .menu{
+text-align:center;
 margin-top:30px;
 }
 
-.link-btn{
+.btn{
 display:inline-block;
-margin:8px;
-padding:12px 20px;
+margin:10px;
+padding:12px 22px;
 background:#ff4d88;
 color:white;
 text-decoration:none;
@@ -83,29 +80,56 @@ font-weight:bold;
 transition:0.3s;
 }
 
-.link-btn:hover{
+.btn:hover{
 background:#e6005c;
-transform:scale(1.07);
+transform:scale(1.1);
+}
+
+.gallery{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+.gallery img{
+width:200px;
+border-radius:12px;
 }
 
 #days{
-font-size:22px;
+font-size:24px;
+text-align:center;
 color:#ff2e78;
-margin-top:15px;
+margin-top:20px;
 }
 
-.floating-heart{
+.heart{
 position:absolute;
-font-size:25px;
 color:#ff4d88;
-animation:float 6s infinite ease-in-out;
-opacity:0.7;
+font-size:20px;
+pointer-events:none;
+animation:floatUp 2s ease-out forwards;
+will-change:transform,opacity;
 }
 
-@keyframes float{
-0%{transform:translateY(0)}
-50%{transform:translateY(-60px)}
-100%{transform:translateY(0)}
+@keyframes floatUp{
+0%{transform:translateY(0);opacity:1}
+100%{transform:translateY(-100px);opacity:0}
+}
+
+.flower{
+position:fixed;
+top:-20px;
+font-size:20px;
+animation:fall linear infinite;
+opacity:0.8;
+}
+
+@keyframes fall{
+0%{transform:translateY(-20px)}
+100%{transform:translateY(110vh)}
 }
 
 </style>
@@ -113,34 +137,21 @@ opacity:0.7;
 
 <body>
 
-<div class="container">
-
 <div class="envelope" onclick="openLetter()">
-💌 Bấm vào để mở thư
-</div>
-
+💌 Bấm vô để mở thư tình yêu nha 💌
 </div>
 
 <div class="letter" id="letter">
 
-<div class="title">Gửi Châu ❤️</div>
+<div class="title">Happy anniversary 3th ❤️</div>
 
 <div class="text">
 
-Anh không giỏi nói những điều quá hoa mỹ,
-nhưng anh muốn em biết rằng…
-
-Từ ngày em bước vào cuộc đời anh,
-mọi thứ trở nên dịu dàng hơn.
-
-Những ngày bình thường cũng trở nên đặc biệt,
-chỉ vì có em ở bên.
-
-Anh không biết tương lai sẽ ra sao,
-nhưng anh biết một điều chắc chắn…
-
-Anh muốn người đi cùng anh trên con đường đó
-chính là em.
+Trải qua ba năm yêu nhau, anh cảm ơn em vì đã thấu hiểu và thương nhau để đồng hành cùng nhau tới tận giờ phút này.
+3 năm = 36 tháng = 1.095 ngày = 26.280 giờ = 1.576.800 phút = 94.608.000 giây là từng đó thời gian anh và yêu nhau, anh luôn biết ơn và trân trọng mối tình này, cảm ơn ông trời, cảm ơn em vì đã vì nhau.
+Anh và em đã trải qua bao thăng trầm cuộc sống, nhưng chúng ta vẫn vượt qua muôn vàn sóng gió và đã yêu thương nhau.
+Anh hy vọng chúng ta sẽ bỏ qua quá khứ, trân trọng hiện tại và hướng tới tương lai cô gái của anh, anh lần đầu làm điều này có lẽ nó sẽ không đẹp, không hoàn hảo, văn không hay, concept không đẹp, nhưng mà anh làm bằng tất cả chân thành, anh yêu em nhiều.
+Anh yêu nhiều từ tận đáy lòng, luôn trân trọng mối tình này, sau đây là vài hình ảnh chút ta đã cùng nhau trải qua hàng triệu phút giây, hàng ngàn ngày giờ, mấy chục tháng và 3 năm nhé. Anh thương em ^^.
 
 </div>
 
@@ -148,14 +159,9 @@ chính là em.
 
 <div class="menu">
 
-<a class="link-btn" href="#memory">Kỷ niệm</a>
-
-<a class="link-btn" href="#promise">Lời hứa</a>
-
-<a class="link-btn" href="#photo">Ảnh tụi mình</a>
-
-<a class="link-btn" href="https://www.facebook.com/hmichaucutee" target="_blank">
-Facebook của Châu
+<a class="btn" href="#memory">Kỷ niệm</a>
+<a class="btn" href="#promise">Lời hứa</a>
+<a class="btn" href="#photo">Ảnh tụi mình</a>
 </a>
 
 </div>
@@ -164,15 +170,15 @@ Facebook của Châu
 
 <div id="memory" class="text">
 
-<h3>Kỷ niệm</h3>
+<h3>The first days</h3>
+Ngày đầu gặp em anh không nghĩ rằng em sẽ trở thành người quan trọng nhất, baeee 
 
-Ngày đầu tiên anh gặp em,
-anh không nghĩ rằng em sẽ trở thành
-người quan trọng nhất với anh.
-
-Nhưng rồi từng ngày trôi qua,
-anh càng chắc chắn rằng
-em chính là người anh muốn giữ lại trong cuộc đời mình.
+<img src="z7627370675706_eb849fedb85ecc769af3a832057e559c.jpg" style="width:200px; height: 150px;px; object-fit:cover;">
+<img src="z7627370669722_8e219641b87e8af29d27df730af864f9.jpg" style="width:200px; height: 150px;px; object-fit:cover;">
+<img src="z7627370665118_a8357ba8c02ba1457dd30db6d241c117.jpg" style="width:200px; height: 150px;px; object-fit:cover;">
+<img src="z7627370658676_7d019415e93df5a3ffff219a7d31b349.jpg" style="width:200px; height: 150px;px; object-fit:cover;">
+<img src="z7627370649632_8b91a876cf85a5b80df1a844f9dde4c4.jpg" style="width:200px; height: 150px;px; object-fit:cover;">
+<img src="z7627370651689_d97a635fc52739286013058cfc100476.jpg" style="width:200px; height: 150px;px; object-fit:cover;">
 
 </div>
 
@@ -182,31 +188,56 @@ em chính là người anh muốn giữ lại trong cuộc đời mình.
 
 <h3>Lời hứa</h3>
 
-Anh không hứa sẽ cho em cả thế giới.
-
-Nhưng anh hứa rằng
-dù thế giới có thay đổi thế nào,
-anh vẫn sẽ đứng cạnh em.
+Anh không hứa sẽ cho em cả thế giới nhưng anh hứa sẽ luôn cho em nhiều điều tốt nhất anh có, anh sẽ đi cùng em tới già.
+<br>
+<img src="z7627376620159_154927d6c62c63b0ed0b4bf4f89efeb1.jpg" style="width: 150px; height: 150px;px; object-fit:cover;">
+<img src="z7627376625086_a58b7bbdb88e4c0e3535209a72e3d9e7.jpg" style="width: 150px; height: 150px;px; object-fit:cover;">
+<img src="z7627376628711_5b90a62364435b8d8cba1fb5339fe80c.jpg" style="width: 150px; height: 150px;px; object-fit:cover;">
 
 </div>
 
 <hr>
 
-<div id="photo" class="text">
+<div id="photo">
 
-<h3>Ảnh của tụi mình</h3>
+<div class="title">Ảnh và chỉ</div>
 
-<img src="https://picsum.photos/250?1" style="border-radius:10px;margin:10px">
+<div class="gallery">
 
-<img src="https://picsum.photos/250?2" style="border-radius:10px;margin:10px">
+<img src="z7627388435508_258d4f299203081c73d050d1322e1250.jpg" style="width: 150px; height: 150px;px; object-fit:cover;">
+<img src="z7627388438583_137e9dc9450a760623895987b25df932.jpg" style="width: 150px; height: 150px;px; object-fit:cover;">
+<img src="z7627388443863_2b82c4a2a2c9f1b9cc0ec32ff9bde41e.jpg" style="width: 150px; height: 150px;px; object-fit:cover;">
+<img src="z7627388455392_4a6333b0991b4c70f4274088724fa90d.jpg" style="width: 150px; height: 150px;px; object-fit:cover;">
+<img src="z7627388444085_bb8660ace44f787d7682ebe95809e5be.jpg" style="width: 150px; height: 150px;px; object-fit:cover;"> 
+<img src="z7627388458962_be664816ba040f9ccac4dc0947ec7de5.jpg" style="width: 150px; height: 150px;px; object-fit:cover;">
+<img src="z7627388465288_3519858df2750ad16f4e17aaa872a4b1.jpg" style="width: 150px; height: 150px;px; object-fit:cover;">
+<img src="z7627388473638_982ebf3ac8de4a98bd152ea9a550272e.jpg" style="width: 150px; height: 150px;px; object-fit:cover;">
+<img src="z7627388477639_60d1d38fecbc8f934131576df3ef93db.jpg" style="width: 150px; height: 150px;px; object-fit:cover;">
+<img src="z7627388480106_f2790cd047f54af0fb18c8b1b78a6f26.jpg" style="width: 150px; height: 150px;px; object-fit:cover;">
+<img src="z7627388482977_160dd60cee1d9cff577905d023b2dd65.jpg" style="width: 150px; height: 150px;px; object-fit:cover;">
+<img src="z7627388493005_3a138b5b07cb54f3d8e79ebe16c55d57.jpg" style="width: 150px; height: 150px;px; object-fit:cover;">
+<img src="z7627388495894_c7b3e1f7929c3e0d0caf8c5d11856932.jpg" style="width: 150px; height: 150px;px; object-fit:cover;">
+<img src="z7627388501329_2c25544f50fa06b59f24f6e2fdb242b7.jpg" style="width: 150px; height: 150px;px; object-fit:cover;">
+<img src="z7627388508437_2afa2d5725e98e28b1c6f96ca28ee70e.jpg" style="width: 150px; height: 150px;px; object-fit:cover;">
+<img src="z7627388516608_ac05687370632ea837a4a976a1f26bad.jpg" style="width: 150px; height: 150px;px; object-fit:cover;">
+<img src="z7627388517026_36b5bc0990e4724345382e27b3e2cfd1.jpg" style="width: 150px; height: 150px;px; object-fit:cover;">
+<img src="z7627388529402_32e1dbca706d0f3f6b237f6165df70fe.jpg" style="width: 150px; height: 150px;px; object-fit:cover;">
+<img src="z7627388529729_fea5852d26b1875cc9e8d81b06f81fda.jpg" style="width: 150px; height: 150px;px; object-fit:cover;">
+<img src="z7627388537054_b0c5d92a109f70072862369056814c56.jpg" style="width: 150px; height: 150px;px; object-fit:cover;">
+<img src="z7627388542388_dbf09aa75c6109272533ac5549e956b9.jpg" style="width: 150px; height: 150px;px; object-fit:cover;">
+<img src="z7627388547791_7e1bb868701138fd500b55d83a64a628.jpg" style="width: 150px; height: 150px;px; object-fit:cover;">
+<img src="z7627388550786_fec206c702b04539dd65e8dab4b8ee10.jpg" style="width: 150px; height: 150px;px; object-fit:cover;">
+<img src="z7627388559504_4f31fb6003974f13eb47fa98497ec8f5.jpg" style="width: 150px; height: 150px;px; object-fit:cover;">
 
 </div>
 
 </div>
 
-<div class="floating-heart" style="top:20%;left:10%">💖</div>
-<div class="floating-heart" style="top:70%;left:80%">💗</div>
-<div class="floating-heart" style="top:40%;left:50%">💞</div>
+</div>
+
+<audio autoplay loop>
+<source src="https://www.bensound.com/bensound-music/bensound-love.mp3">
+</audio>
 
 <script>
 
@@ -215,10 +246,60 @@ document.querySelector(".envelope").style.display="none";
 document.getElementById("letter").style.display="block";
 }
 
-var startDate = new Date("2024-03-16");
-var today = new Date();
+/* tạo tim nhưng giới hạn để tránh lag */
 
-var days = Math.floor((today-startDate)/(1000*60*60*24));
+let heartCount = 0;
+
+document.addEventListener("click",function(e){
+
+if(heartCount > 30) return;
+
+var heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML="❤️";
+
+heart.style.left=e.clientX+"px";
+
+heart.style.top=e.clientY+"px";
+
+document.body.appendChild(heart);
+
+heartCount++;
+
+setTimeout(()=>{
+heart.remove();
+heartCount--;
+},2000);
+
+});
+
+/* hoa rơi nhẹ hơn */
+
+for(let i=0;i<10;i++){
+
+let flower=document.createElement("div");
+
+flower.className="flower";
+
+flower.innerHTML="🌸";
+
+flower.style.left=Math.random()*100+"vw";
+
+flower.style.animationDuration=(8+Math.random()*5)+"s";
+
+document.body.appendChild(flower);
+
+}
+
+/* đếm ngày yêu */
+
+var startDate=new Date("2023-03-17");
+
+var today=new Date();
+
+var days=Math.floor((today-startDate)/(1000*60*60*24));
 
 document.getElementById("days").innerHTML=
 "Anh và Châu đã bên nhau ❤️ "+days+" ngày ❤️";
