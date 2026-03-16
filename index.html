@@ -1,132 +1,231 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>anh yeu vo thui cua anh rat nhieu</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: "Poppins", sans-serif;
-      background: linear-gradient(135deg, #ffd6e8, #ffeef7);
-      overflow-x: hidden;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anh yêu Châu ❤️</title>
 
-    header {
-      text-align: center;
-      padding: 50px 20px;
-      font-size: 42px;
-      color: #d63384;
-      font-weight: 700;
-      letter-spacing: 2px;
-      animation: fadeIn 2s ease;
-    }
+<style>
 
-    .heart-divider {
-      width: 100%;
-      text-align: center;
-      font-size: 30px;
-      color: #ff4d88;
-      margin-top: -10px;
-      animation: pulse 1.5s infinite ease-in-out;
-    }
+body{
+margin:0;
+font-family:Poppins,sans-serif;
+background:linear-gradient(135deg,#ffd6e8,#ffeef7);
+overflow-x:hidden;
+scroll-behavior:smooth;
+}
 
-    section {
-      max-width: 900px;
-      margin: 40px auto;
-      background: #ffffffaa;
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-      backdrop-filter: blur(6px);
-      animation: slideUp 1.2s ease;
-    }
+header{
+text-align:center;
+padding:40px;
+font-size:40px;
+color:#d63384;
+font-weight:bold;
+}
 
-    .love-text {
-      font-size: 22px;
-      line-height: 1.7;
-      color: #b30059;
-      text-align: center;
-      margin-bottom: 25px;
-    }
+nav{
+text-align:center;
+margin-bottom:30px;
+}
 
-    .fb-link {
-      display: inline-block;
-      padding: 12px 25px;
-      background: #ff4d88;
-      color: white;
-      text-decoration: none;
-      font-size: 20px;
-      border-radius: 12px;
-      font-weight: bold;
-      transition: 0.3s;
-      box-shadow: 0 6px 15px rgba(255, 77, 136, 0.4);
-    }
+.menu{
+margin:0 10px;
+text-decoration:none;
+color:#d63384;
+font-size:18px;
+font-weight:bold;
+padding:8px 15px;
+border-radius:10px;
+transition:0.3s;
+}
 
-    .fb-link:hover {
-      background: #e6005c;
-      transform: scale(1.07);
-    }
+.menu:hover{
+background:#ff4d88;
+color:white;
+}
 
-    .floating-heart {
-      position: absolute;
-      font-size: 28px;
-      color: #ff4d88;
-      animation: floatHeart 6s infinite ease-in-out;
-      opacity: 0.7;
-    }
+section{
+max-width:900px;
+margin:40px auto;
+background:#ffffffcc;
+padding:35px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
 
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
+.title{
+font-size:28px;
+text-align:center;
+color:#ff2e78;
+margin-bottom:20px;
+}
 
-    @keyframes slideUp {
-      from { transform: translateY(40px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
+.love-text{
+font-size:20px;
+text-align:center;
+color:#b30059;
+line-height:1.6;
+}
 
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.15); }
-      100% { transform: scale(1); }
-    }
+.fb-link{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#ff4d88;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+}
 
-    @keyframes floatHeart {
-      0% { transform: translateY(0) rotate(0); }
-      50% { transform: translateY(-60px) rotate(20deg); }
-      100% { transform: translateY(0) rotate(0); }
-    }
-  </style>
+.fb-link:hover{
+background:#e6005c;
+}
+
+.gallery{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.gallery img{
+width:220px;
+border-radius:15px;
+box-shadow:0 6px 15px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.08);
+}
+
+#days{
+font-size:28px;
+text-align:center;
+color:#ff2e78;
+margin-top:10px;
+}
+
+.floating-heart{
+position:absolute;
+font-size:30px;
+color:#ff4d88;
+animation:float 6s infinite ease-in-out;
+opacity:0.7;
+}
+
+@keyframes float{
+0%{transform:translateY(0)}
+50%{transform:translateY(-60px)}
+100%{transform:translateY(0)}
+}
+
+</style>
 </head>
+
 <body>
 
-  <header>
-    Anh & Châu ❤️
-  </header>
-  <div class="heart-divider">❥ ❥ ❥</div>
+<header>
+Anh ❤️ Châu
+</header>
 
-  <section>
-    <div class="love-text">
-      "Cảm ơn em ngfdfbdfbdfdfbdfbsfasười con gái đã làm trái tim anh ấm hơn, cuộc sống anh dịu hơn,
-      và mỗi ngày trôi qua đều trở nên đặc biệt. Dù là bình yên hay bão giông, anh vẫn muốn
-      nắm tay em đi cùng đến cuối con đường."
-    </div>
+<nav>
+<a href="#home" class="menu">Trang chủ</a>
+<a href="#memory" class="menu">Kỷ niệm</a>
+<a href="#love" class="menu">Lời anh</a>
+<a href="#photo" class="menu">Ảnh tụi mình</a>
+</nav>
 
-    <div class="love-text">
-      "Với anh, tình yêu không phải là những điều quá lớn lao. Chỉ cần có em, chỉ cần nụ cười của em,
-      là đủ để anh cố gắng mỗi ngày rồi."
-    </div>
+<section id="home">
+<div class="title">Chào mừng đến với trang web của tụi mình</div>
 
-    <div style="text-align:center; margin-top:30px;">
-      <a class="fb-link" href="https://www.facebook.com/hmichaucutee" target="_blank">Facebook của Châu 💗</a>
-    </div>
-  </section>
+<div class="love-text">
+Anh làm trang web này chỉ để nói rằng...  
+Anh yêu Châu rất nhiều ❤️
+</div>
 
-  <div class="floating-heart" style="top: 20%; left: 10%;">💖</div>
-  <div class="floating-heart" style="top: 60%; left: 80%; animation-delay: 1s;">💗</div>
-  <div class="floating-heart" style="top: 40%; left: 50%; animation-delay: 2s;">💞</div>
-  <div class="floating-heart" style="top: 75%; left: 20%; animation-delay: 3s;">💘</div>
+<div id="days"></div>
+
+</section>
+
+<section id="memory">
+<div class="title">Kỷ niệm của tụi mình</div>
+
+<div class="love-text">
+Từ ngày em bước vào cuộc đời anh,  
+mọi thứ dường như trở nên dịu dàng hơn.
+
+Cảm ơn em vì đã ở đây,  
+cảm ơn em vì đã yêu anh.
+</div>
+
+</section>
+
+<section id="love">
+<div class="title">Lời anh muốn nói</div>
+
+<div class="love-text">
+
+Dù sau này có chuyện gì xảy ra,  
+anh vẫn muốn nắm tay em thật chặt.
+
+Đi qua những ngày bình thường,  
+đi qua những ngày giông bão.
+
+Chỉ cần người đó là em  
+thì mọi thứ với anh đều đáng giá.
+
+</div>
+
+<div style="text-align:center">
+
+<a class="fb-link"
+href="https://www.facebook.com/hmichaucutee"
+target="_blank">
+
+Facebook của Châu 💗
+
+</a>
+
+</div>
+
+</section>
+
+<section id="photo">
+
+<div class="title">Ảnh tụi mình</div>
+
+<div class="gallery">
+
+<img src="https://picsum.photos/300?1">
+<img src="https://picsum.photos/300?2">
+<img src="https://picsum.photos/300?3">
+
+</div>
+
+</section>
+
+<audio autoplay loop>
+<source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
+</audio>
+
+<div class="floating-heart" style="top:20%;left:10%">💖</div>
+<div class="floating-heart" style="top:60%;left:80%">💗</div>
+<div class="floating-heart" style="top:40%;left:50%">💞</div>
+<div class="floating-heart" style="top:75%;left:20%">💘</div>
+
+<script>
+
+var startDate = new Date("2024-03-16");
+var today = new Date();
+
+var days = Math.floor((today - startDate) / (1000*60*60*24));
+
+document.getElementById("days").innerHTML =
+"Anh và Châu đã bên nhau được ❤️ " + days + " ngày ❤️";
+
+</script>
 
 </body>
 </html>
