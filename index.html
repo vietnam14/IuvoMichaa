@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anh yêu Châu ❤️</title>
+<title>Lá thư gửi Châu 💌</title>
 
 <style>
 
@@ -11,105 +11,92 @@ body{
 margin:0;
 font-family:Poppins,sans-serif;
 background:linear-gradient(135deg,#ffd6e8,#ffeef7);
-overflow-x:hidden;
-scroll-behavior:smooth;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+overflow:hidden;
 }
 
-header{
+.container{
 text-align:center;
-padding:40px;
-font-size:40px;
-color:#d63384;
-font-weight:bold;
 }
 
-nav{
-text-align:center;
-margin-bottom:30px;
-}
-
-.menu{
-margin:0 10px;
-text-decoration:none;
-color:#d63384;
-font-size:18px;
-font-weight:bold;
-padding:8px 15px;
+.envelope{
+background:white;
+width:300px;
+height:200px;
 border-radius:10px;
-transition:0.3s;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+display:flex;
+justify-content:center;
+align-items:center;
+cursor:pointer;
+transition:0.4s;
 }
 
-.menu:hover{
-background:#ff4d88;
-color:white;
+.envelope:hover{
+transform:scale(1.05);
 }
 
-section{
-max-width:900px;
-margin:40px auto;
-background:#ffffffcc;
-padding:35px;
+.letter{
+display:none;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:white;
+width:80%;
+max-width:700px;
+padding:40px;
 border-radius:20px;
-box-shadow:0 10px 25px rgba(0,0,0,0.1);
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+overflow-y:auto;
+max-height:80vh;
 }
 
 .title{
-font-size:28px;
-text-align:center;
+font-size:30px;
 color:#ff2e78;
 margin-bottom:20px;
 }
 
-.love-text{
+.text{
 font-size:20px;
-text-align:center;
+line-height:1.7;
 color:#b30059;
-line-height:1.6;
 }
 
-.fb-link{
+.menu{
+margin-top:30px;
+}
+
+.link-btn{
 display:inline-block;
-margin-top:20px;
-padding:12px 25px;
+margin:8px;
+padding:12px 20px;
 background:#ff4d88;
 color:white;
 text-decoration:none;
 border-radius:10px;
 font-weight:bold;
-}
-
-.fb-link:hover{
-background:#e6005c;
-}
-
-.gallery{
-display:flex;
-justify-content:center;
-gap:15px;
-flex-wrap:wrap;
-}
-
-.gallery img{
-width:220px;
-border-radius:15px;
-box-shadow:0 6px 15px rgba(0,0,0,0.2);
 transition:0.3s;
 }
 
-.gallery img:hover{
-transform:scale(1.08);
+.link-btn:hover{
+background:#e6005c;
+transform:scale(1.07);
 }
 
 #days{
-font-size:28px;
-text-align:center;
+font-size:22px;
 color:#ff2e78;
-margin-top:10px;
+margin-top:15px;
 }
 
 .floating-heart{
 position:absolute;
-font-size:30px;
+font-size:25px;
 color:#ff4d88;
 animation:float 6s infinite ease-in-out;
 opacity:0.7;
@@ -126,104 +113,115 @@ opacity:0.7;
 
 <body>
 
-<header>
-Anh ❤️ Châu
-</header>
+<div class="container">
 
-<nav>
-<a href="#home" class="menu">Trang chủ</a>
-<a href="#memory" class="menu">Kỷ niệm</a>
-<a href="#love" class="menu">Lời anh</a>
-<a href="#photo" class="menu">Ảnh tụi mình</a>
-</nav>
+<div class="envelope" onclick="openLetter()">
+💌 Bấm vào để mở thư
+</div>
 
-<section id="home">
-<div class="title">Chào mừng đến với trang web của tụi mình</div>
+</div>
 
-<div class="love-text">
-Anh làm trang web này chỉ để nói rằng...  
-Anh yêu Châu rất nhiều ❤️
+<div class="letter" id="letter">
+
+<div class="title">Gửi Châu ❤️</div>
+
+<div class="text">
+
+Anh không giỏi nói những điều quá hoa mỹ,
+nhưng anh muốn em biết rằng…
+
+Từ ngày em bước vào cuộc đời anh,
+mọi thứ trở nên dịu dàng hơn.
+
+Những ngày bình thường cũng trở nên đặc biệt,
+chỉ vì có em ở bên.
+
+Anh không biết tương lai sẽ ra sao,
+nhưng anh biết một điều chắc chắn…
+
+Anh muốn người đi cùng anh trên con đường đó
+chính là em.
+
 </div>
 
 <div id="days"></div>
 
-</section>
+<div class="menu">
 
-<section id="memory">
-<div class="title">Kỷ niệm của tụi mình</div>
+<a class="link-btn" href="#memory">Kỷ niệm</a>
 
-<div class="love-text">
-Từ ngày em bước vào cuộc đời anh,  
-mọi thứ dường như trở nên dịu dàng hơn.
+<a class="link-btn" href="#promise">Lời hứa</a>
 
-Cảm ơn em vì đã ở đây,  
-cảm ơn em vì đã yêu anh.
-</div>
+<a class="link-btn" href="#photo">Ảnh tụi mình</a>
 
-</section>
-
-<section id="love">
-<div class="title">Lời anh muốn nói</div>
-
-<div class="love-text">
-
-Dù sau này có chuyện gì xảy ra,  
-anh vẫn muốn nắm tay em thật chặt.
-
-Đi qua những ngày bình thường,  
-đi qua những ngày giông bão.
-
-Chỉ cần người đó là em  
-thì mọi thứ với anh đều đáng giá.
-
-</div>
-
-<div style="text-align:center">
-
-<a class="fb-link"
-href="https://www.facebook.com/hmichaucutee"
-target="_blank">
-
-Facebook của Châu 💗
-
+<a class="link-btn" href="https://www.facebook.com/hmichaucutee" target="_blank">
+Facebook của Châu
 </a>
 
 </div>
 
-</section>
+<hr>
 
-<section id="photo">
+<div id="memory" class="text">
 
-<div class="title">Ảnh tụi mình</div>
+<h3>Kỷ niệm</h3>
 
-<div class="gallery">
+Ngày đầu tiên anh gặp em,
+anh không nghĩ rằng em sẽ trở thành
+người quan trọng nhất với anh.
 
-<img src="https://picsum.photos/300?1">
-<img src="https://picsum.photos/300?2">
-<img src="https://picsum.photos/300?3">
+Nhưng rồi từng ngày trôi qua,
+anh càng chắc chắn rằng
+em chính là người anh muốn giữ lại trong cuộc đời mình.
 
 </div>
 
-</section>
+<hr>
 
-<audio autoplay loop>
-<source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
-</audio>
+<div id="promise" class="text">
+
+<h3>Lời hứa</h3>
+
+Anh không hứa sẽ cho em cả thế giới.
+
+Nhưng anh hứa rằng
+dù thế giới có thay đổi thế nào,
+anh vẫn sẽ đứng cạnh em.
+
+</div>
+
+<hr>
+
+<div id="photo" class="text">
+
+<h3>Ảnh của tụi mình</h3>
+
+<img src="https://picsum.photos/250?1" style="border-radius:10px;margin:10px">
+
+<img src="https://picsum.photos/250?2" style="border-radius:10px;margin:10px">
+
+</div>
+
+</div>
 
 <div class="floating-heart" style="top:20%;left:10%">💖</div>
-<div class="floating-heart" style="top:60%;left:80%">💗</div>
+<div class="floating-heart" style="top:70%;left:80%">💗</div>
 <div class="floating-heart" style="top:40%;left:50%">💞</div>
-<div class="floating-heart" style="top:75%;left:20%">💘</div>
 
 <script>
+
+function openLetter(){
+document.querySelector(".envelope").style.display="none";
+document.getElementById("letter").style.display="block";
+}
 
 var startDate = new Date("2024-03-16");
 var today = new Date();
 
-var days = Math.floor((today - startDate) / (1000*60*60*24));
+var days = Math.floor((today-startDate)/(1000*60*60*24));
 
-document.getElementById("days").innerHTML =
-"Anh và Châu đã bên nhau được ❤️ " + days + " ngày ❤️";
+document.getElementById("days").innerHTML=
+"Anh và Châu đã bên nhau ❤️ "+days+" ngày ❤️";
 
 </script>
 
