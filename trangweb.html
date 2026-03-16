@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>anh yeu em nhieu lam</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #ffd6e8, #ffeef7);
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      font-size: 42px;
+      color: #d63384;
+      font-weight: 700;
+      letter-spacing: 2px;
+      animation: fadeIn 2s ease;
+    }
+
+    .heart-divider {
+      width: 100%;
+      text-align: center;
+      font-size: 30px;
+      color: #ff4d88;
+      margin-top: -10px;
+      animation: pulse 1.5s infinite ease-in-out;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #ffffffaa;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      backdrop-filter: blur(6px);
+      animation: slideUp 1.2s ease;
+    }
+
+    .love-text {
+      font-size: 22px;
+      line-height: 1.7;
+      color: #b30059;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .fb-link {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #ff4d88;
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      border-radius: 12px;
+      font-weight: bold;
+      transition: 0.3s;
+      box-shadow: 0 6px 15px rgba(255, 77, 136, 0.4);
+    }
+
+    .fb-link:hover {
+      background: #e6005c;
+      transform: scale(1.07);
+    }
+
+    .floating-heart {
+      position: absolute;
+      font-size: 28px;
+      color: #ff4d88;
+      animation: floatHeart 6s infinite ease-in-out;
+      opacity: 0.7;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.15); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes floatHeart {
+      0% { transform: translateY(0) rotate(0); }
+      50% { transform: translateY(-60px) rotate(20deg); }
+      100% { transform: translateY(0) rotate(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Anh & Châu ❤️
+  </header>
+  <div class="heart-divider">❥ ❥ ❥</div>
+
+  <section>
+    <div class="love-text">
+      "Cảm ơn em ngfdfbdfbdfdfbdfbsfasười con gái đã làm trái tim anh ấm hơn, cuộc sống anh dịu hơn,
+      và mỗi ngày trôi qua đều trở nên đặc biệt. Dù là bình yên hay bão giông, anh vẫn muốn
+      nắm tay em đi cùng đến cuối con đường."
+    </div>
+
+    <div class="love-text">
+      "Với anh, tình yêu không phải là những điều quá lớn lao. Chỉ cần có em, chỉ cần nụ cười của em,
+      là đủ để anh cố gắng mỗi ngày rồi."
+    </div>
+
+    <div style="text-align:center; margin-top:30px;">
+      <a class="fb-link" href="https://www.facebook.com/hmichaucutee" target="_blank">Facebook của Châu 💗</a>
+    </div>
+  </section>
+
+  <div class="floating-heart" style="top: 20%; left: 10%;">💖</div>
+  <div class="floating-heart" style="top: 60%; left: 80%; animation-delay: 1s;">💗</div>
+  <div class="floating-heart" style="top: 40%; left: 50%; animation-delay: 2s;">💞</div>
+  <div class="floating-heart" style="top: 75%; left: 20%; animation-delay: 3s;">💘</div>
+
+</body>
+</html>
